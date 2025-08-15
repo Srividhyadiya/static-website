@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brad's Ear Pods</title>
+    <!-- Use Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-black">
+
+    <!-- Header and Navigation -->
+    <header class="bg-black text-white sticky top-0 z-50 animate-fadeIn bg-transparent">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black">BRAD</a>
+            <div class="flex space-x-6">
+                <a href="#features" class="text-gray-300 hover:text-white font-medium transition duration-300">Features</a>
+                <a href="#buy" class="text-gray-300 hover:text-white font-medium transition duration-300">Buy Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="h-screen flex flex-col justify-center items-center px-4 overflow-hidden">
+            <h1 class="text-5xl md:text-8xl font-black text-center mt-[-100px] md:mt-0 animate-fadeInMoveUp" style="animation-delay: 0s;">BRAD's Ear Pods</h1>
+            <!-- Placeholder for a high-quality product image -->
+            <img id="product-image" src="C:\Users\user\Desktop\internship\task5\img4.jpg" alt="Brad's Ear Pods" class="max-w-full h-auto mt-8 animate-fadeInMoveUp" style="animation-delay: 0.5s;">
+
+            <!-- Color Selection Buttons -->
+            <div class="flex space-x-4 mt-8 animate-fadeInMoveUp" style="animation-delay: 1s;">
+                <button id="color-black" class="w-8 h-8 rounded-full bg-black border-2 border-white focus:outline-none focus:ring-4 focus:ring-blue-500 transition-transform hover:scale-110"></button>
+                <button id="color-white" class="w-8 h-8 rounded-full bg-white border-2 border-black focus:outline-none focus:ring-4 focus:ring-blue-500 transition-transform hover:scale-110"></button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-10 fade-in">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="service-card p-8 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105 fade-in">
+                        <div class="text-white text-5xl mb-4">
+                            <!-- SVG icon for sound waves -->
+                            <svg class="mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-2 2L4 5m9 14V6l-2 2L9 5m9 14v-6l2 2m-2-2L15 11l-3 3-2-2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Immersive Audio</h3>
+                        <p class="text-gray-400">Experience crystal-clear sound with our advanced audio technology.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="service-card p-8 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105 fade-in">
+                        <div class="text-white text-5xl mb-4">
+                            <!-- SVG icon for battery -->
+                            <svg class="mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Long-lasting Battery</h3>
+                        <p class="text-gray-400">Enjoy hours of uninterrupted music and calls on a single charge.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="service-card p-8 rounded-2xl shadow-2xl transform transition duration-300 hover:scale-105 fade-in">
+                        <div class="text-white text-5xl mb-4">
+                            <!-- SVG icon for a feather -->
+                            <svg class="mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l-5-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Lightweight Design</h3>
+                        <p class="text-gray-400">An ergonomic and feather-light design for maximum comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Buy Now Section -->
+        <section id="buy" class="py-20 px-4 text-center">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 fade-in">Ready to Elevate Your Audio?</h2>
+                <a href="#" class="inline-block bg-white text-black font-bold py-4 px-12 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-pulse-subtle">
+                    BUY NOW
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Brad's Ear Pods. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
